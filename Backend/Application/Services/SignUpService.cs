@@ -1,6 +1,5 @@
 ﻿using ScopeMed.Application.Interface;
 using ScopeMed.Core.Models;
-using ScopeMed.Interface.Interfaces;
 using System.Threading.Tasks;
 
 namespace ScopeMed.Application.Services

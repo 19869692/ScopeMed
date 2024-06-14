@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.Logging;
 using ScopeMed.Core.Models;
-using ScopeMed.Interface.Interfaces;
+using ScopeMed.Application.Interface;
 using System.Text.Json;
 
 namespace ScopeMed.Functions
@@ -20,7 +20,7 @@ namespace ScopeMed.Functions
             _signUpService = signUpService;
         }
 
-        [Function("signUpFunction")]
+        [Function("SignUpFunction")]
         public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get","post")] HttpRequest req)
         {
             _logger.LogInformation("Processing signup request.");
@@ -46,7 +46,7 @@ namespace ScopeMed.Functions
         {
             public required string Email { get; set; }          //Email must be required
             public required string Password { get; set; }       //Password must be required
-            public required string FirstName { get; set; }
+            public required string FirstName { get; set; }      
             public required string LastName { get; set; }
         }
     }
