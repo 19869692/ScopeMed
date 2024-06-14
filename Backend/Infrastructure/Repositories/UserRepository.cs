@@ -1,8 +1,9 @@
 ﻿using ScopeMed.Core.Models;
-using ScopeMed.Interface.Interfaces;
+using ScopeMed.Application.Interface;
 using System.Data.SqlClient;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using ScopeMed.Interface.Interfaces;
 
 namespace ScopeMed.Infrastructure.Repositories
 {

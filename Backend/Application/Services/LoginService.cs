@@ -1,11 +1,11 @@
 ﻿using System.Threading.Tasks;
 using BCrypt.Net;
 using ScopeMed.Interface;
-using ScopeMed.Interface.Interfaces;
+using ScopeMed.Application.Interface;
 
 namespace ScopeMed.Application.Services
 {
-    public class LoginService : Core.Interfaces.ILoginService   //LoginService class implements ILoginService interface
+    public class LoginService : ILoginService   //LoginService class implements ILoginService interface
     {
         private readonly IUserRepository _userRepository;
 

@@ -5,8 +5,8 @@ using Microsoft.Extensions.Logging;
 using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
-using ScopeMed.Interface.Interfaces;
-using ScopeMed.Core.Interfaces;
+using ScopeMed.Application.Interface;
+
 
 namespace ScopeMed.Functions
 {
@@ -41,6 +41,7 @@ namespace ScopeMed.Functions
 
         private class UserLoginData
         {
+          
             public required string Email { get; set; }          //Email must be required
             public required string Password { get; set; }       //Password must be required
         }

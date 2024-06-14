@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace ScopeMed.Core.Interfaces
+namespace ScopeMed.Application.Interface
 {
     public interface ILoginService
     {

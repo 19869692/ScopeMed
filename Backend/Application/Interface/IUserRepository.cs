@@ -1,7 +1,7 @@
 ﻿using ScopeMed.Core.Models;
 using System.Threading.Tasks;
 
-namespace ScopeMed.Interface.Interfaces
+namespace ScopeMed.Application.Interface
 {
     public interface IUserRepository
     {
